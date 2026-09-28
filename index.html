@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<!-- NASCON QA/QC Calculator. Developed by Osaze Ogedegbe as part of Group C (DPRP GT 2026) -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="author" content="Osaze Ogedegbe, Group C (DPRP GT 2026)">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>NASCON QA/QC Calculator</title>
 <link rel="icon" type="image/png" href="data:image/png;base64,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">
@@ -167,6 +169,9 @@ dialog p { margin: 8px 0; color: var(--text); }
   .bar h1 { font-size: 16px; }
   .bar .badge { display: none; }
 }
+.credit { text-align: center; font-size: 13px; color: var(--muted); padding: 16px 20px;
+          padding-bottom: calc(16px + env(safe-area-inset-bottom)); border-top: 1px solid var(--border); }
+#welcome .credit { border-top: 0; color: #C3D4E0; font-size: 13px; padding: 0 0 4px; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 @media print {
   .screen, .toast, dialog { display: none !important; }
@@ -191,7 +196,9 @@ dialog p { margin: 8px 0; color: var(--text); }
     <div><a class="btn accent" id="startBtn" href="#home" style="display:inline-block">Get started</a></div>
     <div class="hint">or press Enter</div>
   </div>
-  <footer>NASCON Allied Industries Plc &nbsp;|&nbsp; QA/QC Laboratory &nbsp;|&nbsp; Version <span class="ver-no"></span></footer>
+  <footer>
+    <div class="credit">Developed by Osaze Ogedegbe as part of Group C (DPRP GT 2026)</div>
+    NASCON Allied Industries Plc &nbsp;|&nbsp; QA/QC Laboratory &nbsp;|&nbsp; Version <span class="ver-no"></span></footer>
 </section>
 
 <!-- ============ Home ============ -->
@@ -211,6 +218,7 @@ dialog p { margin: 8px 0; color: var(--text); }
     <nav class="side" id="side" aria-label="Categories"></nav>
     <main class="content" id="content"></main>
   </div>
+  <footer class="credit">Developed by Osaze Ogedegbe as part of Group C (DPRP GT 2026)</footer>
 </section>
 
 <!-- ============ Calculation ============ -->
@@ -250,12 +258,14 @@ dialog p { margin: 8px 0; color: var(--text); }
       </div>
     </div>
   </div>
+  <footer class="credit">Developed by Osaze Ogedegbe as part of Group C (DPRP GT 2026)</footer>
 </section>
 
 <dialog id="about">
   <h2>NASCON QA/QC Calculator</h2>
   <p style="color:var(--muted)">Version <span class="ver-no"></span></p>
   <p>Built for the NASCON Allied Industries Plc QA/QC laboratory. <span id="aboutCount"></span> calculations, each showing its full working.</p>
+  <p>Developed by Osaze Ogedegbe as part of Group C (DPRP GT 2026).</p>
   <p>Works offline in any modern browser. Nothing you type leaves this computer.</p>
   <p>Results are only as good as the data entered. Formulas should be verified against the laboratory's approved SOPs.</p>
   <form method="dialog" style="text-align:right;margin-top:16px"><button class="btn">Close</button></form>
